@@ -1,0 +1,76 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+        "type": "TextBlock",
+        "size": "Medium",
+        "weight": "Bolder",
+        "text": "Meeting Feedback"
+    },
+    {
+        "type": "TextBlock",
+        "text": "How would you rate your meeting? (1-5)",
+        "wrap": true
+    },
+    {
+        "type": "Input.ChoiceSet",
+        "choices": [
+            {
+                "title": "1",
+                "value": "1"
+            },
+            {
+                "title": "2",
+                "value": "2"
+            },
+            {
+                "title": "3",
+                "value": "3"
+            },
+            {
+                "title": "4",
+                "value": "4"
+            },
+            {
+                "title": "5",
+                "value": "5"
+            }
+        ],
+        "placeholder": "Rating",
+        "style": "expanded",
+        "id": "rating"
+    },
+    {
+        "type": "TextBlock",
+        "text": "Any ideas to make it more productive?",
+        "wrap": true
+    },
+    {
+        "type": "Input.Text",
+        "placeholder": "",
+        "isMultiline": true,
+        "id": "productive"
+    },
+    {
+        "type": "TextBlock",
+        "text": "What would you change in the current session?",
+        "wrap": true
+    },
+    {
+        "type": "Input.Text",
+        "placeholder": "",
+        "isMultiline": true,
+        "id": "session"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Execute",
+      "title": "Submit",
+      "verb": "userlike",
+      "fallback": "Action.Submit"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4"
+}
