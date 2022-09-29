@@ -65,10 +65,9 @@
   ],
   "actions": [
     {
-      "type": "Action.Execute",
+      "type": "Action.Submit",
       "title": "Submit",
-      "verb": "userlike",
-      "fallback": "Action.Submit"
+      "verb": "userlike"
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
